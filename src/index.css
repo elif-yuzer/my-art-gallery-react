@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.card {
+  border: none !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  backdrop-filter: blur(6px);
+
+  background: rgba(255, 255, 255, 0.35) !important;
+}
+
+.card-body {
+  background: transparent !important;
+  padding: 16px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.card-img {
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+  background: transparent !important;
+}
+
+.card:hover .card-img {
+  transform: scale(1.08);
+}
+
+.card-title {
+  font-size: 0.9rem;
+  color: #6c757d;
+  letter-spacing: 0.5px;
+  background: transparent !important;
+}
+
+.card-text {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #212529;
+  margin-top: 4px;
+  background: transparent !important;
+}
+
+.card {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+about-items {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+ 
+}
+.about {
+  background-image: url(./img/about.jpg);
+  min-height: 100vh !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.artist {
+  background-image:
+    linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2)),
+    url("./img/artist.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+.artistdetail {
+  background: linear-gradient(135deg, #ece0e1 0%, #f6eeef 50%, #4C2C2E 100%);
+
+}

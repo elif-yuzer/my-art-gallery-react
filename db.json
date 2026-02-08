@@ -1,0 +1,154 @@
+{
+  "artists": [
+    {
+      "id": "a1",
+      "name": "Claude Monet",
+      "lifeSpan": "1840-1926",
+      "country": "Fransa",
+      "movements": ["Empresyonizm"],
+      "bio": "Empresyonizmin öncü isimlerinden. Işık ve atmosfer etkileriyle tanınır.",
+      "funFact": "Işık değişimlerini yakalamak için aynı manzarayı seri halinde defalarca çalışmıştır.",
+      "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude_Monet_1899_Nadar_crop.jpg"
+    },
+    {
+      "id": "a2",
+      "name": "Vincent van Gogh",
+      "lifeSpan": "1853-1890",
+      "country": "Hollanda",
+      "movements": ["Post-Empresyonizm"],
+      "bio": "Yoğun fırça darbeleri ve canlı renkleriyle modern sanatın en etkili isimlerindendir.",
+      "funFact": "Yaşamı boyunca çok az eser satabildiği söylenir.",
+      "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "a3",
+      "name": "Leonardo da Vinci",
+      "lifeSpan": "1452-1519",
+      "country": "İtalya",
+      "movements": ["Rönesans"],
+      "bio": "Ressam, mucit ve bilim insanı; anatomi ve perspektifte çığır açtı.",
+      "funFact": "Notlarını sıkça ters yazıyla (mirror writing) tutardı.",
+      "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonardo_da_Vinci_-_presumed_self-portrait_-_WGA12798.jpg"
+    },
+    {
+      "id": "a4",
+      "name": "Pablo Picasso",
+      "lifeSpan": "1881-1973",
+      "country": "İspanya",
+      "movements": ["Kübizm", "Modernizm"],
+      "bio": "20. yüzyılın en etkili sanatçılarından biri ve Kübizm akımının kurucularındandır.",
+      "funFact": "Guernica adlı eseri savaş karşıtı en güçlü sanat eserlerinden biridir.",
+      "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Pablo_picasso_1.jpg"
+    },
+    {
+      "id": "a5",
+      "name": "Salvador Dalí",
+      "lifeSpan": "1904-1989",
+      "country": "İspanya",
+      "movements": ["Sürrealizm"],
+      "bio": "Sürrealist akımın en önemli temsilcilerindendir.",
+      "funFact": "Belleğin Azmi tablosu eriyen saatleriyle ünlüdür.",
+      "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Salvador_Dali_1939.jpg"
+    },
+    {
+      "id": "a6",
+      "name": "Rembrandt van Rijn",
+      "lifeSpan": "1606-1669",
+      "country": "Hollanda",
+      "movements": ["Barok"],
+      "bio": "Barok döneminin en önemli ressamlarından biridir.",
+      "funFact": "Hayatı boyunca 80’den fazla self-portrait yapmıştır.",
+      "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg"
+    }
+  ],
+
+  "categories": [
+    { "id": "c1", "name": "Manzara" },
+    { "id": "c2", "name": "Portre" },
+    { "id": "c3", "name": "Tarihsel" },
+    { "id": "c4", "name": "Sürreal" },
+    { "id": "c5", "name": "Modern" }
+  ],
+
+  "artworks": [
+   {
+  "id": "w101",
+  "artistId": "a1",
+  "title": "Cliff Walk at Pourville",
+  "year": 1882,
+  "categoryId": "c1",
+  "medium": "Tuval üzerine yağlıboya",
+  "dimensions": "66.5 × 82.5 cm",
+  "museum": "Art Institute of Chicago, Chicago",
+  "image": "./src/img/claudemonet1.jpg",
+  "description": "Claude Monet'nin Pourville kıyılarında uçurum üzerinde yürüyen figürleri betimlediği empresyonist eser.",
+  "tags": ["empresyonizm", "manzara", "deniz"],
+  "isFeatured": true
+},
+    {
+      "id": "w102",
+      "artistId": "a1",
+      "title": "Nilüferler",
+      "year": 1899,
+      "categoryId": "c1",
+      "image": "./src/img/claudemonetnilufer.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": "w201",
+      "artistId": "a2",
+      "title": "Yıldızlı Gece",
+      "year": 1889,
+      "categoryId": "c5",
+      "image": "./src/img/yildizligece.jpg",
+      "isFeatured": true
+    },
+    {
+      "id": "w301",
+      "artistId": "a3",
+      "title": "Mona Lisa",
+      "year": 1503,
+      "categoryId": "c2",
+      "image": "./src/img/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg",
+      "isFeatured": true
+    },
+    {
+      "id": "w401",
+      "artistId": "a4",
+      "title": "Guernica",
+      "year": 1937,
+      "categoryId": "c5",
+      "image": "./src/img/guernica.webp",
+      "isFeatured": true
+    },
+    {
+      "id": "w501",
+      "artistId": "a5",
+      "title": "Belleğin Azmi",
+      "year": 1931,
+      "categoryId": "c4",
+      "image": "./src/img/Salvador_Dali_-_Bellegin_Azmi_Tablosu.webp",
+      "isFeatured": true
+    },
+    {
+      "id": "w601",
+      "artistId": "a6",
+      "title": "Gece Devriyesi",
+      "year": 1642,
+      "categoryId": "c3",
+      "image": "./src/img/rembrandt_gece_devriyesi_480x480.webp",
+      "isFeatured": false
+    }
+  ],
+
+  "contacts": [
+    {
+      "id": "d392",
+      "name": "Elif",
+      "lastName": "Yüzer",
+      "password": "123",
+      "company": "deneme",
+      "isAgreed": true
+    }
+  ]
+}
