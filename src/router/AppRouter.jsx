@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import MainLayout from "../mainlayout/mainlayout";
+import MainLayout from "../mainlayout/Mainlayout";
 import Home from "../pages/Home";
 import Gallery from "../pages/Gallery";
 import Artist from "../pages/Artist";
