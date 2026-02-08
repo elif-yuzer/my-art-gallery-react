@@ -1,5 +1,5 @@
 import AppRouter from "./router/AppRouter";
-import data from '../db.json'
+import data from "../db.example.json";
 
 
 
