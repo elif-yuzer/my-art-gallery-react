@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import MainLayout from "../mainlayout/Mainlayout";
+import MainLayout from "../mainlayout/MainLayout";
 import Home from "../pages/Home";
 import Gallery from "../pages/Gallery";
 import Artist from "../pages/Artist";
@@ -13,16 +13,15 @@ import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
 import ArtistDetail from "../pages/ArtistDetail";
 
-const AppRouter = ({artists,artworks,categories,data}) => {
+const AppRouter = ({ artists, artworks, categories, data }) => {
   return (
     <BrowserRouter>
       <Routes>
-       
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="gallery" element={<Gallery />} />
-          <Route path="artists/:id" element={<Artist  artists={artists} artworks={artworks} />} />
-          <Route path="artists" element={<ArtistDetail  data={data}/>}/>
+          <Route path="artists/:id" element={<Artist artists={artists} artworks={artworks} />} />
+          <Route path="artists" element={<ArtistDetail data={data} />} />
 
           <Route path="about" element={<About />}>
             <Route path="history" element={<History />} />
