@@ -4,13 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "dev": "npx concurrently \"npm run api\" \"npm run start\"",
     "start": "vite",
-  "api": "json-server --watch db.json --port 5178"
+    "api": "json-server --watch db.json --port 5178"
   },
   "dependencies": {
     "axios": "^1.13.4",

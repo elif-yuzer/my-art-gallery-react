@@ -19,7 +19,7 @@ const AppRouter = ({ artists, artworks, categories, data }) => {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
-          <Route path="gallery" element={<Gallery />} />
+          <Route path="gallery"   element={<Gallery  artists={artists} artworks={artworks}/>} />
           <Route path="artists/:id" element={<Artist artists={artists} artworks={artworks} />} />
           <Route path="artists" element={<ArtistDetail data={data} />} />
 
