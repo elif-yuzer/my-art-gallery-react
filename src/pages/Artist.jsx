@@ -8,13 +8,13 @@ import ArtistDetail from "./ArtistDetail";
 const Artists = ({artists,artworks}) => {
   const navigate = useNavigate();
   const location=useLocation()
-  console.log(location.state);
+  //console.log(location.state);
   /* const param=useParams() */
   const {id}=useParams()
  
 const selectArtist=location.state?. artist  || artists.find((a)=>a.id==id)
-console.log(selectArtist.name)
-console.log(selectArtist);
+/* console.log(selectArtist.name)
+console.log(selectArtist); */
 if(!selectArtist) {
 return  <div className="container mt-4  h-100">Sanatçı bilgisi bulunamadı...</div>
 }

@@ -80,7 +80,7 @@
   "medium": "Tuval üzerine yağlıboya",
   "dimensions": "66.5 × 82.5 cm",
   "museum": "Art Institute of Chicago, Chicago",
-  "image": "./src/img/claudemonet1.jpg",
+  "image": "/images/claudemonet1.jpg",
   "description": "Claude Monet'nin Pourville kıyılarında uçurum üzerinde yürüyen figürleri betimlediği empresyonist eser.",
   "tags": ["empresyonizm", "manzara", "deniz"],
   "isFeatured": true
@@ -91,7 +91,7 @@
       "title": "Nilüferler",
       "year": 1899,
       "categoryId": "c1",
-      "image": "./src/img/claudemonetnilufer.jpg",
+      "image": "/images/claudemonetnilufer.jpg",
       "isFeatured": false
     },
     {
@@ -100,7 +100,7 @@
       "title": "Yıldızlı Gece",
       "year": 1889,
       "categoryId": "c5",
-      "image": "./src/img/yildizligece.jpg",
+      "image": "/images/yildizligece.jpg",
       "isFeatured": true
     },
     {
@@ -109,7 +109,7 @@
       "title": "Mona Lisa",
       "year": 1503,
       "categoryId": "c2",
-      "image": "./src/img/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg",
+      "image": "/images/mona-lisa.jpg",
       "isFeatured": true
     },
     {
@@ -118,7 +118,7 @@
       "title": "Guernica",
       "year": 1937,
       "categoryId": "c5",
-      "image": "./src/img/guernica.webp",
+      "image": "/images/guernica.webp",
       "isFeatured": true
     },
     {
@@ -127,7 +127,7 @@
       "title": "Belleğin Azmi",
       "year": 1931,
       "categoryId": "c4",
-      "image": "./src/img/Salvador_Dali_-_Bellegin_Azmi_Tablosu.webp",
+      "image": "/images/Salvador_Dali_-_Bellegin_Azmi_Tablosu.webp",
       "isFeatured": true
     },
     {
@@ -136,7 +136,7 @@
       "title": "Gece Devriyesi",
       "year": 1642,
       "categoryId": "c3",
-      "image": "./src/img/rembrandt_gece_devriyesi_480x480.webp",
+      "image": "/images/rembrandt_gece_devriyesi_480x480.webp",
       "isFeatured": false
     }
   ],

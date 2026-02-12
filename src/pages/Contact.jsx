@@ -1,64 +1,43 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Container, Form, InputGroup, Button } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 
-
 const Contact = () => {
-  const navigate=useNavigate()
-  const url = "http://localhost:5178/contacts";
-   const [list ,setList]=useState([])
-
-   const getVeri =async()=>{
- try {
-   const res=await axios.get(url)
-   setList(res.data)
-  console.log(res.data);
-  
- } catch (error) {
-  console.log(error);
-  
- }
-} 
+  const navigate = useNavigate();
 
   const [info, setInfo] = useState({
     name: "",
     lastName: "",
-    password: "",
     company: "",
+    message: "",
     isAgreed: false,
   });
 
   const handleChange = (e) => {
     const { name } = e.target;
-
     const val =
       e.target.type === "checkbox" ? e.target.checked : e.target.value;
     setInfo({ ...info, [name]: val });
-    console.log(val);
   };
-  const veriGonder = async () => {
-    await axios.post(url, info);
-  };
-  const handleSubmit = async(e) => {
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setInfo(info);
-    console.log(info);
-    await veriGonder()
-    navigate("/")
+    // API yok: şimdilik sadece yönlendir
+    // İleride Formspree / email servisi eklenebilir
+    alert("Thanks! Your message was received.");
+    navigate("/");
   };
+
   useEffect(() => {
     document.body.style.backgroundColor = "#f0e6ef";
     document.body.style.overflowX = "hidden";
-   
 
-     getVeri()
     return () => {
       document.body.style.backgroundColor = "";
       document.body.style.overflowX = "auto";
     };
-   
   }, []);
+
   const style = {
     display: "flex",
     flexDirection: "column",
@@ -71,10 +50,8 @@ const Contact = () => {
   };
 
   return (
-    <Container className=" mt-5 m-auto" style={style}>
-      <h2 className="text-center mb-4 fw-bold text-dark">
-        Create your free account
-      </h2>
+    <Container className="mt-5 m-auto" style={style}>
+      <h2 className="text-center mb-4 fw-bold text-dark">Contact us</h2>
 
       <div
         style={{ maxWidth: "400px", width: "100%" }}
@@ -82,56 +59,47 @@ const Contact = () => {
       >
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3">
-            <InputGroup>
-              <Form.Control
-                onChange={handleChange}
-                type="text"
-                placeholder="First Name"
-                required
-                name="name"
-                value={info.name}
-              />
-            </InputGroup>
+            <Form.Control
+              onChange={handleChange}
+              type="text"
+              placeholder="First Name"
+              required
+              name="name"
+              value={info.name}
+            />
           </Form.Group>
 
           <Form.Group className="mb-3">
-            <InputGroup>
-              <Form.Control
-                type="text"
-                placeholder="Last Name"
-                name="lastName"
-                required
-                onChange={handleChange}
-                value={info.lastName}
-              />
-            </InputGroup>
+            <Form.Control
+              type="text"
+              placeholder="Last Name"
+              name="lastName"
+              required
+              onChange={handleChange}
+              value={info.lastName}
+            />
           </Form.Group>
 
           <Form.Group className="mb-3">
-            <InputGroup>
-              <Form.Control
-                type="password"
-                placeholder="••••••••"
-                name="password"
-                required
-                autoComplete="auto"
-                onChange={handleChange}
-                value={info.password}
-              />
-            </InputGroup>
+            <Form.Control
+              type="text"
+              placeholder="Company"
+              name="company"
+              onChange={handleChange}
+              value={info.company}
+            />
           </Form.Group>
 
           <Form.Group className="mb-3">
-            <InputGroup>
-              <Form.Control
-                type="text"
-                placeholder="Company"
-                name="company"
-                required
-                onChange={handleChange}
-                value={info.company}
-              />
-            </InputGroup>
+            <Form.Control
+              as="textarea"
+              rows={3}
+              placeholder="Your message"
+              name="message"
+              required
+              onChange={handleChange}
+              value={info.message}
+            />
           </Form.Group>
 
           <Form.Group className="mb-3">
@@ -144,24 +112,19 @@ const Contact = () => {
               onChange={handleChange}
               label={
                 <span>
-                  I accept the <Link to="/service">Terms of Service</Link> and
-                  <Link to="/policy">Privacy Policy</Link>
+                  I accept the <Link to="/about">Terms</Link>
                 </span>
               }
-              feedback="You must agree before submitting."
-              feedbackType="invalid"
             />
           </Form.Group>
+
           <Button
             variant="info"
             type="submit"
             className="w-100 fw-bold text-white py-2 mb-3"
           >
-            Sign up
+            Send message
           </Button>
-          <Form.Text className="mb-3 text-center d-block">
-            <Link to="/signin">Already have an account?Sign in </Link>
-          </Form.Text>
         </Form>
       </div>
     </Container>
